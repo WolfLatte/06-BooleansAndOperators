@@ -1,9 +1,8 @@
 txt = "The quick brown fox jumps over the lazy dog."
 t1 = "fox"
 t2 = "cat"
-
 ###############################################################################
-# TODO: 1. (6 pts)
+# DONE: 1. (6 pts)
 #
 #   Write each of the functions below (each that takes two parameters and uses
 #   the appropriate operator from the reading) that simply returns the boolean
@@ -21,9 +20,32 @@ t2 = "cat"
 #   
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+def equal(x, y):
+   return (x == y)
 
+def not_equal(x, y):
+   return (x!=y)
+
+def greater_than(x, y):
+   return (x > y)
+
+def less_than(x, y):
+   return (x < y)
+
+def greater_than_or_equal_to(x, y):
+   return (x >= y)
+
+def less_than_or_equal_to(x, y):
+   return (x <= y)
+
+print(equal(2,2))
+print (not_equal(2, 9))
+print (greater_than(9, 2))
+print (less_than(2, 9))
+print (greater_than_or_equal_to(9, 2))
+print (less_than_or_equal_to(2, 9))
 ###############################################################################
-# TODO: 1. (2 pts)
+# DONE: 1. (2 pts)
 #
 #   Write a line of code that returns True if the string
 #       t1 (defined above)
@@ -41,9 +63,9 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
-
+print(t1 in txt)
 ###############################################################################
-# TODO: 1. (1 pt)
+# DONE: 1. (1 pt)
 #
 #   Now, write a line of code that returns True if the string
 #       t1
@@ -53,3 +75,4 @@ t2 = "cat"
 #
 #   Once you have done this, then change the above _TODO_ to DONE.
 ###############################################################################
+print(t1 != txt)
